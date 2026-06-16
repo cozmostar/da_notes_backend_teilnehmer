@@ -15,5 +15,5 @@ class NoteViewSet(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Retriev
     - DELETE /notes/{id}/
     """
 
-    queryset = Note.objects.all().order_by("title")
+    queryset = Note.objects.all()
     serializer_class = NoteSerializer
